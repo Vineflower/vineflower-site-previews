@@ -1,0 +1,31 @@
+name: "cleanup old builds"
+
+on:
+  schedule:
+    - cron: '14 1 * * *'
+  workflow_dispatch:
+
+env:
+  PYTHON_VERSION: "3.10"
+
+jobs:
+  cleanup:
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: "checkout"
+        uses: "actions/checkout@v3"
+      - name: "setup python ${{ env.PYTHON_VERSION }}"
+        uses: "actions/setup-python@v4"
+        with:
+          python-version: "${{ env.PYTHON_VERSION }}"
+          cache: "pip"
+          cache-dependency-path: "_scripts/requirements.txt"
+      - name: "install dependencies"
+        run: "pip install -r _scripts/requirements.txt"
+      - name: "cleanup old PRs" 
+        run: |
+          git config user.name "vineflower-bot"
+          git config user.email "noreply@vineflower.org"
+          python _scripts/cleanup.py .
+          git commit -a -m 'cleanup outdated previews' || true
+          git push 
