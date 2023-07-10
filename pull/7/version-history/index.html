@@ -1,0 +1,539 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+<link rel="index" title="Index" href="../genindex/" /><link rel="search" title="Search" href="../search/" /><link rel="prev" title="Contributing to the Site" href="../contributing/" />
+
+    <link rel="shortcut icon" href="../_static/favicon.ico"/><!-- Generated with Sphinx 6.2.1 and Furo 2023.05.20 -->
+        <title>Version History - Vineflower (v1.9.2)</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?digest=e6660623a769aa55fea372102b9bf3151b292993" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    <link rel="stylesheet" type="text/css" href="../_static/button/button.css" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f0f0f0;
+  --color-code-foreground: black;
+  --color-brand-primary: #0F1F35;
+  --color-brand-content: #C24DFF;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #282a36;
+  --color-code-foreground: #f8f8f2;
+  --color-brand-primary: #B8FF5C;
+  --color-brand-content: #ABA9FF;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #282a36;
+  --color-code-foreground: #f8f8f2;
+  --color-brand-primary: #B8FF5C;
+  --color-brand-content: #ABA9FF;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../"><div class="brand">Vineflower (v1.9.2)</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../_static/logo-light.png" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../_static/logo-dark.png" alt="Dark Logo"/>
+  </div>
+  
+  
+</a><form class="sidebar-search-container" method="get" action="../search/" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../contributing/">Contributing to the Site</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Version History</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section class="tex2jax_ignore mathjax_ignore" id="version-history">
+<h1>Version History<a class="headerlink" href="#version-history" title="Permalink to this heading">#</a></h1>
+<section id="release-1-9-0">
+<h2>Quiltflower 1.9.0<a class="headerlink" href="#release-1-9-0" title="Permalink to this heading">#</a></h2>
+<p><em>Released on 2022-10-28 - <a class="reference external" href="https://github.com/Vineflower/vineflower/releases/tag/1.9.0">GitHub</a></em></p>
+<p>Quiltflower 1.9.0 brings dozens of bug fixes, new features, improved decompilation, and an improved way to interact with the Quiltflower API.<br>
+<strong>NOTE: This version requires a minimum of Java 11 to run!</strong></p>
+<p>Some highlights include:</p>
+<ul>
+<li>Improved switch pattern matching support</li>
+<li>Changed default settings to improve code output by default</li>
+<li>Fixed the "baby shark" bug (multiple nested infinite loops in a row)</li>
+<li>Optimized memory, CPU, and disk usage</li>
+</ul>
+<p>Please report any issues at <a href="https://github.com/QuiltMC/quiltflower/issues">https://github.com/QuiltMC/quiltflower/issues</a>.<br>
+The full changelog for this version goes as follows:</p>
+<details>
+<summary>Click here to expand the full changelog</summary>
+<ul>
+<li>Added support for transitive and static modifiers in module info (Thanks kb1000!)</li>
+<li>Added improved support for switch pattern matching (Thanks Luna!)</li>
+<li>Added implementation version to manifest (Thanks nbauma109!)</li>
+<li>Added some support for constant dynamic resugaring</li>
+<li>Added lazy loading for classpath jars (Thanks, zml!)</li>
+<li>Added new option to verify variable merges</li>
+<li>Added new option to decompile preview features</li>
+<li>Added support for decompiling out of executables</li>
+<li>Enabled try loop fix by default</li>
+<li>Enabled ternary conditions by default</li>
+<li>Improved API for developer usability (Thanks, zml!)</li>
+<li>Improved marking of monitorenter and monitorexit opcodes when they aren't resugared properly</li>
+<li>Improved resugaring of switch expressions over enums</li>
+<li>Improved default values in switch expressions</li>
+<li>Improved tracking of assignments in try blocks</li>
+<li>Improved Pi value parentheses</li>
+<li>Improved rename entities iteration order to be sequential based on classes seen</li>
+<li>Improved bytecode to line mappings</li>
+<li>Improved the experimental try loop fix to extend to try-finally blocks</li>
+<li>Improved help message when running through the command line (thanks sschr!)</li>
+<li>Renamed $FF: tags in decompiled code to $QF:</li>
+<li>Rewrote ternary processing code and made it much more accurate</li>
+<li>Optimized code for speed and memory usage</li>
+<li>Optimized file reading and parsing</li>
+<li>Updated help message</li>
+<li>Fixed most cases of longstanding issue where multiple nested infinite loops would be created</li>
+<li>Fixed "invalid constant type" issue with variable merging</li>
+<li>Fixed many subtle issues with code generation due to improper internal state management</li>
+<li>Fixed some invalid code generation with assignments in if statements</li>
+<li>Fixed if pattern matching shadowing already defined variables</li>
+<li>Fixed do-while loops not being created when they are the last statement inside of an outer loop</li>
+<li>Fixed finally blocks inside of loops causing a crash</li>
+<li>Fixed methods and fields not getting renamed by rename entities</li>
+<li>Fixed bogus var10000 variables showing up in some cases</li>
+<li>Fixed catch blocks being removed entirely</li>
+<li>Fixed Object[] not being casted correctly</li>
+<li>Fixed CME in loop creation</li>
+<li>Fixed synchronized statements not decompiling correctly when the last statement is a throw</li>
+<li>Fixed finally blocks in loops causing improper break statements</li>
+<li>Fixed extra parenthesis around array accesses</li>
+<li>Fixed extra casts being applied in method calls when not needed</li>
+<li>Fixed foreach loops being created when the iteration variable is used earlier</li>
+<li>Fixed improper loop generation when the loop is the first block</li>
+<li>Fixed returns in loops when breaks make more sense, in loops where it's the first block</li>
+<li>Fixed finally blocks in synchronized statements causing crashes</li>
+<li>Fixed assignments becoming improper inside of try blocks</li>
+<li>Fixed some cases where booleans and ints would merge together</li>
+<li>Fixed more cases of <code>int x = true;</code></li>
+<li>Fixed an infinite loop OOM combo with finally processing</li>
+<li>Fixed synchronized statements not decompiling correctly when in a loop</li>
+<li>Fixed arrays being initialized with char values instead of number literals</li>
+<li>Fixed some cases of switch expressions being created when they shouldn't be</li>
+<li>Fixed empty newlines at the end of sequence statements</li>
+<li>Fixed static fields showing up before enum fields</li>
+<li>Fixed some rare label issues with breaks out of try statements</li>
+<li>Fixed some extraneous generic casts on assignments</li>
+<li>Fixed some generic union type casts being improper</li>
+<li>Fixed rare concurrency issues causing crashes</li>
+<li>Fixed toString not removed in string concat (thanks, thewindsofwinter!)</li>
+<li>Fixed incorrect assignment exprent modification for assignments with a condition (Thanks Totty!)</li>
+<li>Fixed class cast exception when creating a foreach over array with multiple dimensions</li>
+<li>Fixed NullPointerException when writing some switch on string statements</li>
+<li>Merged from upstream: Fixed an infinite loop while decompiling obfuscated code</li>
+<li>Fixed NullPointerException when parsing enum method descriptors</li>
+<li>Fixed casts not being applied on byte-&gt;int coercion</li>
+<li>Fixed casts not being applied on Object parameters</li>
+<li>Fixed a few  casts with anonymous classes</li>
+</ul>
+</details></section>
+<section id="release-1-8-1">
+<h2>Quiltflower 1.8.1<a class="headerlink" href="#release-1-8-1" title="Permalink to this heading">#</a></h2>
+<p><em>Released on 2022-04-29 - <a class="reference external" href="https://github.com/Vineflower/vineflower/releases/tag/1.8.1">GitHub</a></em></p>
+<ul>
+<li>Fixed bug where decompiled output would sometimes not be saved</li>
+<li>Added option to add linemapping metadata to jar entries (thanks jpenilla!)</li>
+</ul></section>
+<section id="release-1-8-0">
+<h2>Quiltflower 1.8.0<a class="headerlink" href="#release-1-8-0" title="Permalink to this heading">#</a></h2>
+<p><em>Released on 2022-04-05 - <a class="reference external" href="https://github.com/Vineflower/vineflower/releases/tag/1.8.0">GitHub</a></em></p>
+<p>The changelog for this version is very long, so here are the highlights:</p>
+<ul>
+<li>Improved the quality and cleanliness of the output</li>
+<li>Many fixes to generics</li>
+<li>Many fixes to loops</li>
+<li>Dozens of bugs and crashes fixed</li>
+</ul>
+<details>
+  <summary>Click here to expand the full changelog</summary>
+<ul>
+<li>Added ++/-- inlining when possible</li>
+<li>Added variable renaming when there's multiple variables with the same name</li>
+<li>Added switch statement brace enclosing when the multiple variables are in different case branches</li>
+<li>Added switch expression in assert support</li>
+<li>Added <code>Implementation-Name: Quiltflower</code> to jar manifest (thanks jnp!)</li>
+<li>Added formatting on complex if-else chains (thanks Earthcomputer!)</li>
+<li>Added basic switch pattern matching support for preview versions</li>
+<li>Changed some default options: generic signatures and synthetic members are now hidden by default, pattern matching is enabled, and ternary-in-if is disabled</li>
+<li>Improved default branch hiding on switches when it's an empty fallthrough</li>
+<li>Improved generic casts on ternaries</li>
+<li>Improved generic casts on assigns</li>
+<li>Improved ternary type inference when one branch is null</li>
+<li>Improved detection of explicit generic invocations, such as Comparator.&lt;...&gt;comparing()</li>
+<li>Improved variable merging in loops (improved variable liveness calculation)</li>
+<li>Improved if-else statement structure to prevent highly nested if-else statements</li>
+<li>Improved conversion of labeled continues to breaks to produce correct but cleaner code</li>
+<li>Improved if statements with a single labeled sequence by lifting the label to the if statement, making it clearer what is being jumped to by the label</li>
+<li>Improved the experimental try loop fix, now works better and doesn't break on random code</li>
+<li>Improved the IResultSaver API (thanks zml!)</li>
+<li>Improved pattern matching significantly</li>
+<li>Improved string concat support, now supports makeConcat as well as makeConcatWithConstants</li>
+<li>Improved infinite loop with return at the end condensing significantly better</li>
+<li>Improved labeled break -&gt; continue resugaring</li>
+<li>Optimized excess memory usage</li>
+<li>Fixed <code>&lt;unknown&gt;</code> variables in foreach loops</li>
+<li>Fixed null being cast when it doesn't need to be</li>
+<li>Fixed constructor invocations having extra parenthesis</li>
+<li>Fixed switch expressions not having parenthesis around them when they should</li>
+<li>Fixed instances where variables were cast twice</li>
+<li>Fixed switch statements in finally blocks causing issues</li>
+<li>Fixed synchronized statements having a null argument when object is being assigned to null</li>
+<li>Fixed synchronized statements removing autoboxing</li>
+<li>Fixed <code>method()[i] += 0;</code> not being properly inlined</li>
+<li>Fixed copying files to directories not working properly</li>
+<li>Fixed boxing issues with field initializers</li>
+<li>Fixed rare crashes with inconsistent idom sequences</li>
+<li>Fixed continues becoming implicit when they should be explicit</li>
+<li>Fixed local classes not decompiling breaking entire file</li>
+<li>Fixed double brace initializers in java 17 placing extra modifiers on the braces</li>
+<li>Fixed some cases where stack variables created by the dup bytecode family were not simplified</li>
+<li>Fixed swap based constructor invocations</li>
+<li>Fixed cases where while loops were improperly created, moving a continue out of the loop</li>
+<li>Fixed case when there are 2 pops after a jump (thanks Kroppeb!)</li>
+<li>Fixed expression reordering in array initializes resulting in semantically different code (thanks Kroppeb!)</li>
+<li>Fixed phantom continue or break at the end of a loop</li>
+<li>Fixed statement graph ordering being incorrect in certain cases</li>
+<li>Fixed IndexOutOfBounds in ternary processing</li>
+<li>Fixed statement graph not discovering all nodes, leading to <code>&lt;unknown&gt;</code> variables</li>
+<li>Fixed improper loop elimination when the loop was required to make the output correct</li>
+<li>Fixed generics not casting on <code>super</code> keyword (contravariance)</li>
+<li>Fixed open file systems not being closed (thanks CoolMineman!)</li>
+<li>Fixed decompilation error with kotlin when enums (thanks Juuz!)</li>
+</ul>
+</details></section>
+<section id="release-1-7-0">
+<h2>Quiltflower 1.7.0<a class="headerlink" href="#release-1-7-0" title="Permalink to this heading">#</a></h2>
+<p><em>Released on 2021-12-07 - <a class="reference external" href="https://github.com/Vineflower/vineflower/releases/tag/1.7.0">GitHub</a></em></p>
+<ul>
+<li>Added switch expression support</li>
+<li>Added decompiled code formatting (Thanks Earthcomputer!)</li>
+<li>Added proper try-with-resource return support</li>
+<li>Fixed try with resources statements inlining statements when it shouldn't</li>
+<li>Added comments to decompiled code when there are oddities, such as finally blocks failing to inline</li>
+<li>Added support for eclipse switch-on-enum</li>
+<li>Added bytecode dumping on error (Thanks skyrising!)</li>
+<li>Added exception dumping on error (Thanks skyrising!)</li>
+<li>Added link to Quiltflower issue tracker on error</li>
+<li>Added toggle for override annotation</li>
+<li>Improved linemapping</li>
+<li>Improved initializers not being inlined when they needed a static qualification in a lambda (Thanks skyrising!)</li>
+<li>Fixed empty infinite loops composed of 2+ gotos failing to decompile</li>
+<li>Fixed decompiling from the command line creating files instead of folders</li>
+<li>Fixed created jars having extra folder entries saved as files</li>
+<li>Fixed certain errors being able to cause classes to not be decompiled</li>
+<li>Fixed classes in pre 1.0 java not being parsed</li>
+<li>Fixed enums being marked as sealed (Thanks skyrising!)</li>
+<li>Fixed recursive lambdas causing stackoverflow</li>
+<li>Fixed references to inner classes in other classes breaking the entire method</li>
+</ul></section>
+<section id="release-1-6-1">
+<h2>Quiltflower 1.6.1<a class="headerlink" href="#release-1-6-1" title="Permalink to this heading">#</a></h2>
+<p><em>Released on 2021-11-24 - <a class="reference external" href="https://github.com/Vineflower/vineflower/releases/tag/1.6.1">GitHub</a></em></p>
+<ul>
+<li>Fixes try with resources bugs</li>
+<li>Adds override annotation preference</li>
+<li>Improved linemapping</li>
+<li>Optimized try with resources</li>
+</ul></section>
+<section id="release-1-6-0">
+<h2>Quiltflower 1.6.0<a class="headerlink" href="#release-1-6-0" title="Permalink to this heading">#</a></h2>
+<p><em>Released on 2021-11-08 - <a class="reference external" href="https://github.com/Vineflower/vineflower/releases/tag/1.6.0">GitHub</a></em></p>
+<ul>
+<li>Added try with resources support</li>
+<li>Added if pattern matching support</li>
+<li>Added ternary in if statement and loop support</li>
+<li>Added ternary constant simplification (Thanks MatrixX!)</li>
+<li>Added bytecode and exception in errored methods</li>
+<li>Added support for polymorphic methodhandles (Thanks skyrising!)</li>
+<li>Added the "DOT_ERROR_EXPORT_DIR" option to dump graphs only in errored methods</li>
+<li>Added local record and enum support (Thanks MatrixX!)</li>
+<li>Added some warnings for when known invalid code was produced, such as synchronize over null</li>
+<li>Added some explicit exceptions for some NPEs and IOOBEs</li>
+<li>Added ability to use just the java runtime as a library instead of the entire classpath (Thanks skyrising!)</li>
+<li>Added multiple new decompiler options</li>
+<li>Improved some control flow around returns and exceptions</li>
+<li>Fixed empty for loops being made when they were empty, now they're while loops</li>
+<li>Fixed decompiling of default record methods</li>
+<li>Fixed empty infinite loops not being decompiled</li>
+<li>Fixed assignments in final fields being inlined when they shouldn't be</li>
+<li>Fixed loops being while(true) when they were regular loops</li>
+<li>Fixed rare crash where long was incorrectly typed</li>
+<li>Fixed bug with casts and parenthesis</li>
+<li>Fixed invalid zip file creation (Thanks Geolykt!)</li>
+<li>Fixed IOOBE with sequence inlining</li>
+<li>Fixed local classes with lvt capture crashing (Thanks MatrixX!)</li>
+<li>Fixed some foreach loops with generics having a variable type of </li>
+<li>Fixed rare NPE with default case in switch over string</li>
+<li>Fixed private interface methods having default modifier</li>
+<li>Fixed classes in default package having a leading dot</li>
+<li>Fixed local classes being put in the wrong location (Thanks skyrising!)</li>
+<li>Fixed fields with lambdas capturing the enclosing class being moved to static blocks (Thanks skyrising!)</li>
+<li>Fixed some unboxing casts being removed with generic variables (Thanks skyrising!)</li>
+<li>Fixed crash with array initializers in static blocks trying to be inlined</li>
+<li>Optimized code (Thanks Kroppeb and skyrising!)</li>
+</ul></section>
+<section id="release-1-5-0">
+<h2>Quiltflower 1.5.0<a class="headerlink" href="#release-1-5-0" title="Permalink to this heading">#</a></h2>
+<p><em>Released on 2021-06-15 - <a class="reference external" href="https://github.com/Vineflower/vineflower/releases/tag/1.5.0">GitHub</a></em></p>
+<ul>
+<li>Added override annotation support</li>
+<li>Added more support for uninlining pi constants (Thanks Will BL!)</li>
+<li>Improved handling of methods with same name and descriptor (Thanks skyrising!)</li>
+<li>Improved performance of loading library code (Thanks skyrising!)</li>
+<li>Fixed empty string concatenation</li>
+<li>Fixed generic parameter crash</li>
+<li>Fixed Objects.requireNonNull not being removed when they should be</li>
+<li>Fixed chars being used for arithmetic operations and returns</li>
+<li>Fixed compound assignments such as += and *= not being created</li>
+<li>Fixed random crashes occurring during decompilation (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="908581081" data-permission-text="Title is private" data-url="https://github.com/Vineflower/vineflower/issues/13" data-hovercard-type="issue" data-hovercard-url="/Vineflower/vineflower/issues/13/hovercard" href="https://github.com/Vineflower/vineflower/issues/13">#13</a>)</li>
+</ul></section>
+<section id="release-1-4-0">
+<h2>Quiltflower 1.4.0<a class="headerlink" href="#release-1-4-0" title="Permalink to this heading">#</a></h2>
+<p><em>Released on 2021-05-28 - <a class="reference external" href="https://github.com/Vineflower/vineflower/releases/tag/1.4.0">GitHub</a></em></p>
+<ul>
+<li>Merged ForgeFlower</li>
+<li>Updated Upstream</li>
+<li>Fixed multiple issues with decompilation</li>
+</ul></section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          
+          <a class="prev-page" href="../contributing/">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Contributing to the Site</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2023 Vineflower Team and Contributors
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Version History</a><ul>
+<li><a class="reference internal" href="#release-1-9-0">Quiltflower 1.9.0</a></li>
+<li><a class="reference internal" href="#release-1-8-1">Quiltflower 1.8.1</a></li>
+<li><a class="reference internal" href="#release-1-8-0">Quiltflower 1.8.0</a></li>
+<li><a class="reference internal" href="#release-1-7-0">Quiltflower 1.7.0</a></li>
+<li><a class="reference internal" href="#release-1-6-1">Quiltflower 1.6.1</a></li>
+<li><a class="reference internal" href="#release-1-6-0">Quiltflower 1.6.0</a></li>
+<li><a class="reference internal" href="#release-1-5-0">Quiltflower 1.5.0</a></li>
+<li><a class="reference internal" href="#release-1-4-0">Quiltflower 1.4.0</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/scripts/furo.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    </body>
+</html>
