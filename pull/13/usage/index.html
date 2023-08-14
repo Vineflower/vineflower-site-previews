@@ -1,0 +1,757 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+<link rel="index" title="Index" href="../genindex/" /><link rel="search" title="Search" href="../search/" /><link rel="next" title="Socials" href="../socials/" /><link rel="prev" title="Vineflower" href="../" />
+
+    <link rel="shortcut icon" href="../_static/favicon.ico"/><!-- Generated with Sphinx 6.2.1 and Furo 2023.05.20 -->
+        <title>Usage - Vineflower (v1.9.2)</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?digest=e6660623a769aa55fea372102b9bf3151b292993" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    <link rel="stylesheet" type="text/css" href="../_static/button/button.css" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f0f0f0;
+  --color-code-foreground: black;
+  --color-brand-primary: #0F1F35;
+  --color-brand-content: #C24DFF;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #282a36;
+  --color-code-foreground: #f8f8f2;
+  --color-brand-primary: #B8FF5C;
+  --color-brand-content: #ABA9FF;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #282a36;
+  --color-code-foreground: #f8f8f2;
+  --color-brand-primary: #B8FF5C;
+  --color-brand-content: #ABA9FF;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../"><div class="brand">Vineflower (v1.9.2)</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../_static/logo-light.png" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../_static/logo-dark.png" alt="Dark Logo"/>
+  </div>
+  
+  
+</a><form class="sidebar-search-container" method="get" action="../search/" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul class="current">
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../socials/">Socials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/">Contributing to the Site</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-history/">Version History</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section class="tex2jax_ignore mathjax_ignore" id="usage">
+<h1>Usage<a class="headerlink" href="#usage" title="Permalink to this heading">#</a></h1>
+<p>Vineflower can be run as a CLI tool.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>java<span class="w"> </span>-jar<span class="w"> </span>vineflower.jar<span class="w"> </span><span class="o">[</span>args...<span class="o">]</span><span class="w"> </span><span class="o">{</span><span class="k">in</span><span class="o">}</span>+<span class="w"> </span><span class="o">[{</span>out<span class="o">}]</span>
+</pre></div>
+</div>
+<section id="arguments">
+<h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this heading">#</a></h2>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-cfg">
+<span id="cmdoption-cfg"></span><span class="sig-name descname"><span class="pre">--cfg</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">file</span></em><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="sig-name descname"><span class="pre">-cfg</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">file</span></em><a class="headerlink" href="#cmdoption-cfg" title="Permalink to this definition">#</a></dt>
+<dd><p>A configuration file containing additional arguments to pass to the decompiler, one per line.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-add-external">
+<span id="cmdoption-e"></span><span class="sig-name descname"><span class="pre">--add-external</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">library</span></em><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="sig-name descname"><span class="pre">-e</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">library</span></em><a class="headerlink" href="#cmdoption-add-external" title="Permalink to this definition">#</a></dt>
+<dd><p>Can be specified as many times as necessary to add library inputs to the decompile classpath</p>
+</dd></dl>
+
+<p>The following three options control how decompiled output should be written. If none are specified, the output type will be inferred based on the output. <code class="docutils literal notranslate"><span class="pre">.zip</span></code> or <code class="docutils literal notranslate"><span class="pre">.jar</span></code>-ending outputs will be treated as archives, all other values will be treated as a directory, or no output at all will write the decompiled output to the console.</p>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-file">
+<span class="sig-name descname"><span class="pre">--file</span></span><a class="headerlink" href="#cmdoption-file" title="Permalink to this definition">#</a></dt>
+<dd><p>Prefer saving to an archive file.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-folder">
+<span class="sig-name descname"><span class="pre">--folder</span></span><a class="headerlink" href="#cmdoption-folder" title="Permalink to this definition">#</a></dt>
+<dd><p>Prefer saving to a folder, potentially extracting an input archive.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-legacy">
+<span class="sig-name descname"><span class="pre">--legacy</span></span><a class="headerlink" href="#cmdoption-legacy" title="Permalink to this definition">#</a></dt>
+<dd><p>Use legacy Fernflower save behavior.</p>
+</dd></dl>
+
+<p>It is possible to limit decompiled output to only a certain subset of the input files, for cases where an entire archive is provided as input:</p>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-only">
+<span id="cmdoption-only"></span><span class="sig-name descname"><span class="pre">--only</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">prefix</span></em><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="sig-name descname"><span class="pre">-only</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">prefix</span></em><a class="headerlink" href="#cmdoption-only" title="Permalink to this definition">#</a></dt>
+<dd><p>Only members whose paths start with <code class="docutils literal notranslate"><span class="pre">prefix</span></code> will be emitted</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-asc">
+<span class="sig-name descname"><span class="pre">-asc</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-asc" title="Permalink to this definition">#</a></dt>
+<dd><p>Encode non-ASCII characters in string and character literals as Unicode escapes.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ban">
+<span class="sig-name descname"><span class="pre">-ban</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-ban" title="Permalink to this definition">#</a></dt>
+<dd><p>Path to a class that implements IIdentifierRenamer.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-bsm">
+<span class="sig-name descname"><span class="pre">-bsm</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-bsm" title="Permalink to this definition">#</a></dt>
+<dd><p>Map Bytecode to source lines.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-bto">
+<span class="sig-name descname"><span class="pre">-bto</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-bto" title="Permalink to this definition">#</a></dt>
+<dd><p>The JVM represents booleans as integers 0 and 1. This decodes 0 and 1 as boolean when it makes sense.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-das">
+<span class="sig-name descname"><span class="pre">-das</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-das" title="Permalink to this definition">#</a></dt>
+<dd><p>Decompile assert statements.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-dbe">
+<span class="sig-name descname"><span class="pre">-dbe</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-dbe" title="Permalink to this definition">#</a></dt>
+<dd><p>Put the bytecode in the method body when an error occurs.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-dc4">
+<span class="sig-name descname"><span class="pre">-dc4</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-dc4" title="Permalink to this definition">#</a></dt>
+<dd><p>Java 1 to Java 4 had a different class reference format. This resugars them properly.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-dcc">
+<span class="sig-name descname"><span class="pre">-dcc</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-dcc" title="Permalink to this definition">#</a></dt>
+<dd><p>Some constant-dynamic expressions can’t be converted to a single Java expression with identical run-time behaviour. This decompiles them to a similar non-lazy expression, marked with a comment.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-dcl">
+<span class="sig-name descname"><span class="pre">-dcl</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-dcl" title="Permalink to this definition">#</a></dt>
+<dd><p>Dump line mappings to output archive zip entry extra data</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-dec">
+<span class="sig-name descname"><span class="pre">-dec</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-dec" title="Permalink to this definition">#</a></dt>
+<dd><p>Sometimes, odd behavior of the bytecode or unfixable problems occur. This enables or disables the adding of those to the decompiled output.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-dee">
+<span class="sig-name descname"><span class="pre">-dee</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-dee" title="Permalink to this definition">#</a></dt>
+<dd><p>Put the exception message in the method body or source file when an error occurs.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-den">
+<span class="sig-name descname"><span class="pre">-den</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-den" title="Permalink to this definition">#</a></dt>
+<dd><p>Decompile enums.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-dgs">
+<span class="sig-name descname"><span class="pre">-dgs</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-dgs" title="Permalink to this definition">#</a></dt>
+<dd><p>Decompile generics in variables, fields, and statements.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-din">
+<span class="sig-name descname"><span class="pre">-din</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-din" title="Permalink to this definition">#</a></dt>
+<dd><p>Process inner classes and add them to the decompiled output.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-dpr">
+<span class="sig-name descname"><span class="pre">-dpr</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-dpr" title="Permalink to this definition">#</a></dt>
+<dd><p>Decompile features marked as preview or incubating in the latest Java versions.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ega">
+<span class="sig-name descname"><span class="pre">-ega</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-ega" title="Permalink to this definition">#</a></dt>
+<dd><p>Put explicit diamond generic arguments on method calls.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-erm">
+<span class="sig-name descname"><span class="pre">-erm</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-erm" title="Permalink to this definition">#</a></dt>
+<dd><p>Message to display when an error occurs in the decompiler.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">Please</span> <span class="pre">report</span> <span class="pre">this</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">Vineflower</span> <span class="pre">issue</span> <span class="pre">tracker,</span> <span class="pre">at</span> <span class="pre">https://github.com/Vineflower/vineflower/issues</span> <span class="pre">with</span> <span class="pre">a</span> <span class="pre">copy</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">class</span> <span class="pre">file</span> <span class="pre">(if</span> <span class="pre">you</span> <span class="pre">have</span> <span class="pre">the</span> <span class="pre">rights</span> <span class="pre">to</span> <span class="pre">distribute</span> <span class="pre">it!)</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-esm">
+<span class="sig-name descname"><span class="pre">-esm</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-esm" title="Permalink to this definition">#</a></dt>
+<dd><p>If a synchronized block has a monitorenter without any corresponding monitorexit, try to deduce where one should be to ensure the synchronized is proper.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-fdi">
+<span class="sig-name descname"><span class="pre">-fdi</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-fdi" title="Permalink to this definition">#</a></dt>
+<dd><p>Decompile finally blocks.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-fji">
+<span class="sig-name descname"><span class="pre">-fji</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-fji" title="Permalink to this definition">#</a></dt>
+<dd><p>Forces the processing of JSR instructions even if the class files shouldn’t contain it (Java 7+)</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-hdc">
+<span class="sig-name descname"><span class="pre">-hdc</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-hdc" title="Permalink to this definition">#</a></dt>
+<dd><p>Hide constructors with no parameters and no code.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-hes">
+<span class="sig-name descname"><span class="pre">-hes</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-hes" title="Permalink to this definition">#</a></dt>
+<dd><p>Hide super() calls with no parameters.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-iec">
+<span class="sig-name descname"><span class="pre">-iec</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-iec" title="Permalink to this definition">#</a></dt>
+<dd><p>Give the decompiler information about every jar on the classpath.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-iib">
+<span class="sig-name descname"><span class="pre">-iib</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-iib" title="Permalink to this definition">#</a></dt>
+<dd><p>Ignore bytecode that is malformed.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ind">
+<span class="sig-name descname"><span class="pre">-ind</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-ind" title="Permalink to this definition">#</a></dt>
+<dd><p>A string of spaces or tabs that is placed for each indent level.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate">&#160;&#160; </code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-inn">
+<span class="sig-name descname"><span class="pre">-inn</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-inn" title="Permalink to this definition">#</a></dt>
+<dd><p>Resugar Intellij IDEA’s code generated by &#64;NotNull annotations.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-isl">
+<span class="sig-name descname"><span class="pre">-isl</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-isl" title="Permalink to this definition">#</a></dt>
+<dd><p>Remove braces on simple, one line, lambda expressions.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-jpr">
+<span class="sig-name descname"><span class="pre">-jpr</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-jpr" title="Permalink to this definition">#</a></dt>
+<dd><p>Use JAD-style variable naming for parameters.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-jrt">
+<span class="sig-name descname"><span class="pre">-jrt</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-jrt" title="Permalink to this definition">#</a></dt>
+<dd><p>Give the decompiler information about the Java runtime, either 1 or current for the current runtime, or a path to another runtime</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-jvn">
+<span class="sig-name descname"><span class="pre">-jvn</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-jvn" title="Permalink to this definition">#</a></dt>
+<dd><p>Use JAD-style variable naming for local variables, instead of var&lt;index&gt;_&lt;version&gt;.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-lac">
+<span class="sig-name descname"><span class="pre">-lac</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-lac" title="Permalink to this definition">#</a></dt>
+<dd><p>Decompile lambda expressions as anonymous classes.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-lit">
+<span class="sig-name descname"><span class="pre">-lit</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-lit" title="Permalink to this definition">#</a></dt>
+<dd><p>Keep NaN, infinties, and pi values as is without resugaring them.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-log">
+<span class="sig-name descname"><span class="pre">-log</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-log" title="Permalink to this definition">#</a></dt>
+<dd><p>Logging level. Must be one of: ‘info’, ‘debug’, ‘warn’, ‘error’.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">INFO</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-mpm">
+<span class="sig-name descname"><span class="pre">-mpm</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-mpm" title="Permalink to this definition">#</a></dt>
+<dd><p>Maximum time in seconds to process a method. This is deprecated, do not use.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ner">
+<span class="sig-name descname"><span class="pre">-ner</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-ner" title="Permalink to this definition">#</a></dt>
+<dd><p>Integrate returns better in try-catch blocks.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-nls">
+<span class="sig-name descname"><span class="pre">-nls</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-nls" title="Permalink to this definition">#</a></dt>
+<dd><p>Character that seperates lines in the decompiled output.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-nns">
+<span class="sig-name descname"><span class="pre">-nns</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-nns" title="Permalink to this definition">#</a></dt>
+<dd><p>Treat some known structures as synthetic even when not explicitly set.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ovr">
+<span class="sig-name descname"><span class="pre">-ovr</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-ovr" title="Permalink to this definition">#</a></dt>
+<dd><p>Display override annotations for methods known to the decompiler.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-pam">
+<span class="sig-name descname"><span class="pre">-pam</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-pam" title="Permalink to this definition">#</a></dt>
+<dd><p>Decompile with if and switch pattern matching enabled.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-pll">
+<span class="sig-name descname"><span class="pre">-pll</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-pll" title="Permalink to this definition">#</a></dt>
+<dd><p>Max line length before formatting is applied.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">160</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-rbr">
+<span class="sig-name descname"><span class="pre">-rbr</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-rbr" title="Permalink to this definition">#</a></dt>
+<dd><p>Removes any methods that are marked as bridge from the decompiled output.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ren">
+<span class="sig-name descname"><span class="pre">-ren</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-ren" title="Permalink to this definition">#</a></dt>
+<dd><p>Rename classes, fields, and methods with a number suffix to help in deobfuscation.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-rer">
+<span class="sig-name descname"><span class="pre">-rer</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-rer" title="Permalink to this definition">#</a></dt>
+<dd><p>Remove try-catch blocks with no code.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-rgn">
+<span class="sig-name descname"><span class="pre">-rgn</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-rgn" title="Permalink to this definition">#</a></dt>
+<dd><p>obj.new Inner() or calling invoking a method on a method reference will create a synthetic getClass() call. This removes it.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-rsy">
+<span class="sig-name descname"><span class="pre">-rsy</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-rsy" title="Permalink to this definition">#</a></dt>
+<dd><p>Removes any methods and fields that are marked as synthetic from the decompiled output.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-sef">
+<span class="sig-name descname"><span class="pre">-sef</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-sef" title="Permalink to this definition">#</a></dt>
+<dd><p>Skip copying non-class files from the input folder or file to the output</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-sfc">
+<span class="sig-name descname"><span class="pre">-sfc</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-sfc" title="Permalink to this definition">#</a></dt>
+<dd><p>Add debug comments showing the class SourceFile attribute if present.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-shs">
+<span class="sig-name descname"><span class="pre">-shs</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-shs" title="Permalink to this definition">#</a></dt>
+<dd><p>Display code blocks hidden, for debugging purposes</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ssp">
+<span class="sig-name descname"><span class="pre">-ssp</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-ssp" title="Permalink to this definition">#</a></dt>
+<dd><p>Simplify variables across stack bounds to resugar complex statements.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-swe">
+<span class="sig-name descname"><span class="pre">-swe</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-swe" title="Permalink to this definition">#</a></dt>
+<dd><p>Decompile switch expressions in modern Java class files.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-tco">
+<span class="sig-name descname"><span class="pre">-tco</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-tco" title="Permalink to this definition">#</a></dt>
+<dd><p>Tries to collapse if statements that have a ternary in their condition.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-tcs">
+<span class="sig-name descname"><span class="pre">-tcs</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-tcs" title="Permalink to this definition">#</a></dt>
+<dd><p>Fold branches of ternary expressions that have boolean true and false constants.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-thr">
+<span class="sig-name descname"><span class="pre">-thr</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-thr" title="Permalink to this definition">#</a></dt>
+<dd><p>How many threads to use to decompile.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-tlf">
+<span class="sig-name descname"><span class="pre">-tlf</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-tlf" title="Permalink to this definition">#</a></dt>
+<dd><p>Code with a while loop inside of a try-catch block sometimes is malformed, this fixes it.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-udv">
+<span class="sig-name descname"><span class="pre">-udv</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-udv" title="Permalink to this definition">#</a></dt>
+<dd><p>Use LVT names for local variables and parameters instead of var&lt;index&gt;_&lt;version&gt;.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ump">
+<span class="sig-name descname"><span class="pre">-ump</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-ump" title="Permalink to this definition">#</a></dt>
+<dd><p>Use method parameter names, as given in the MethodParameters attribute.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-urc">
+<span class="sig-name descname"><span class="pre">-urc</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-urc" title="Permalink to this definition">#</a></dt>
+<dd><p>Path to a class that implements IIdentifierRenamer.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-uto">
+<span class="sig-name descname"><span class="pre">-uto</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-uto" title="Permalink to this definition">#</a></dt>
+<dd><p>Treat nameless types as java.lang.Object.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-vac">
+<span class="sig-name descname"><span class="pre">-vac</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-vac" title="Permalink to this definition">#</a></dt>
+<dd><p>Verify that anonymous classes are local.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-vvm">
+<span class="sig-name descname"><span class="pre">-vvm</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-vvm" title="Permalink to this definition">#</a></dt>
+<dd><p>Double checks to make sure the validity of variable merges. If you are having strange recompilation issues, this is a good place to start.</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-win">
+<span class="sig-name descname"><span class="pre">-win</span></span><span class="p"><span class="pre">=</span></span><em><span class="pre">value</span></em><a class="headerlink" href="#cmdoption-win" title="Permalink to this definition">#</a></dt>
+<dd><p>Warn about inconsistent inner class attributes</p>
+<p><strong>Default</strong>: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</dd></dl>
+
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="../socials/">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Socials</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="../">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Home</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2023 Vineflower Team and Contributors
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Usage</a><ul>
+<li><a class="reference internal" href="#arguments">Arguments</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/scripts/furo.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    </body>
+</html>
