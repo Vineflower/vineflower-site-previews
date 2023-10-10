@@ -17,6 +17,7 @@
 .highlight .cs { color: #60a0b0; background-color: #fff0f0 } /* Comment.Special */
 .highlight .gd { color: #A00000 } /* Generic.Deleted */
 .highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
 .highlight .gr { color: #FF0000 } /* Generic.Error */
 .highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
 .highlight .gi { color: #00A000 } /* Generic.Inserted */
@@ -97,6 +98,7 @@ body[data-theme="dark"] .highlight .c1 { color: #6272a4 } /* Comment.Single */
 body[data-theme="dark"] .highlight .cs { color: #6272a4 } /* Comment.Special */
 body[data-theme="dark"] .highlight .gd { color: #8b080b } /* Generic.Deleted */
 body[data-theme="dark"] .highlight .ge { color: #f8f8f2; text-decoration: underline } /* Generic.Emph */
+body[data-theme="dark"] .highlight .ges { color: #f8f8f2; text-decoration: underline } /* Generic.EmphStrong */
 body[data-theme="dark"] .highlight .gr { color: #f8f8f2 } /* Generic.Error */
 body[data-theme="dark"] .highlight .gh { color: #f8f8f2; font-weight: bold } /* Generic.Heading */
 body[data-theme="dark"] .highlight .gi { color: #f8f8f2; font-weight: bold } /* Generic.Inserted */
@@ -181,6 +183,7 @@ body:not([data-theme="light"]) .highlight .c1 { color: #6272a4 } /* Comment.Sing
 body:not([data-theme="light"]) .highlight .cs { color: #6272a4 } /* Comment.Special */
 body:not([data-theme="light"]) .highlight .gd { color: #8b080b } /* Generic.Deleted */
 body:not([data-theme="light"]) .highlight .ge { color: #f8f8f2; text-decoration: underline } /* Generic.Emph */
+body:not([data-theme="light"]) .highlight .ges { color: #f8f8f2; text-decoration: underline } /* Generic.EmphStrong */
 body:not([data-theme="light"]) .highlight .gr { color: #f8f8f2 } /* Generic.Error */
 body:not([data-theme="light"]) .highlight .gh { color: #f8f8f2; font-weight: bold } /* Generic.Heading */
 body:not([data-theme="light"]) .highlight .gi { color: #f8f8f2; font-weight: bold } /* Generic.Inserted */
